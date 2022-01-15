@@ -3,7 +3,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 /* CSS is start from here  */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
 
+.navbar h3{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    margin-left: 120px;
+    
+}
+.menu-name{
+    margin:30px 165px 0;
+}
+.menu-name i{
+    margin-right: 20px;
+}
 body{
     margin: 0 auto;
 }
@@ -29,8 +48,11 @@ body{
     height: 414px;
     margin-top: 50px;
     border-radius: 15px solid gray;
+    
 }
-
+.profile-pic:hover img{
+    transform: rotate(0.5turn);
+}
 .start{
     padding-right: 50px;
 }
@@ -44,6 +66,10 @@ body{
     font-family: Poppins;
     color: #FFFFFF;
     margin-top: 16px;
+
+}
+.start:hover a{
+    background-color: black;
 }
 .start a i{
     margin-left: 5px;    
@@ -162,8 +188,8 @@ body{
 /* feature section  */
 
 .feature img{
-    width: 404px;
-    height: 270px;
+    width: 800px;
+    height: 400px;
     border-radius: 7px;
     }
 .feature{
@@ -179,30 +205,12 @@ body{
     font-size: 38px;
     line-height: 60px;
     color: #0A0826;
+    text-align: center;
 }
-.one-place p{
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 28px;
-    color: #6C6C6C;
+.one-place hr{
+    width: 300px;
 }
-.one-place a{
-    background-color: #E02C6D;
-    padding: 10px 24px;
-    color: #FFFFFF;
-    text-decoration: none;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
-   
-}
-.one-place .fas{
-    margin-left: 8px;
-}
+
 
 /* Footer section  */
 
@@ -233,6 +241,71 @@ footer p{
 .social-icon .fab{
     margin-right: 16px;
 }
-.social-icon{
 
+/* Media Query */
+
+/* Mobile-Devices */
+@media only screen and (max-width:688px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    .navbar h3{
+        margin: 15px 0 0 10px;
+
+    }
+    .menu-name i{
+        margin: 0;
+        padding: 5px;
+    }
+    
+    .influencer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 0px 0 10px ;
+    }
+    .single-product{
+        margin: 0px;
+    }
+    .profile-pic img{
+        width: 257px;
+    }
+    .company-logos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 275.21px;
+        margin: 0 0 0 70px;
+    }
+    .all-product{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+    }
+    #see-more{
+        display: flex;
+        text-align: justify;
+        margin: 10px 30px 30px 0;
+    }
+    .feature{
+        display: flex;
+        margin: 0;
+        width: 300px;
+        margin-left: 20px;
+    }
+    .feature hr{
+        width: 300px;
+        text-align: center;
+    }
+    .feature img{
+        width: 500px;
+        height: 200px;
+        margin-left: 20px;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    body{
+        margin: 0 auto;
+    }
 }
